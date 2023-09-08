@@ -1,0 +1,65 @@
+import time, os
+
+a=int (input("Ingrese su primer numero:"))
+b=int (input("Ingrese su segundo numero:"))
+
+eleccion = 0
+
+while eleccion !=6:
+    print("""
+        Indique la operacion que desea realizar:
+          1) Suma
+          2) Resta
+          3) Division
+          4) Multiplicacion
+          5) Cambiar valores
+          6) Salir
+          """)
+    eleccion=int(input())
+
+    if eleccion==1: 
+        inicio =time.time()
+        print("")
+        print("Resultado: ", a,"+",b,"=",a+b)
+        fin=time.time()
+        tiempo_ejecutado=fin-inicio
+        print(tiempo_ejecutado)
+
+    if eleccion==2: 
+        inicio =time.time()
+        print("")
+        print("Resultado: ", a,"-",b,"=",a-b)
+        fin=time.time()
+        tiempo_ejecutado=fin-inicio
+        print(tiempo_ejecutado)
+
+    if eleccion==3: 
+        inicio =time.time()
+        print("")
+        print("Resultado: ", a,"/",b,"=",a/b)
+        fin=time.time()
+        tiempo_ejecutado=fin-inicio
+        print(tiempo_ejecutado)
+ 
+    if eleccion==4: 
+        inicio =time.time()
+        print("")
+        print("Resultado: ", a,"*",b,"=",a*b)
+        fin=time.time()
+        tiempo_ejecutado=fin-inicio
+        print(tiempo_ejecutado)
+
+    if eleccion==5:
+        inicio =time.time()
+        a=int (input("Ingrese su primer numero:"))
+        b=int (input("Ingrese su segundo numero:"))
+        fin=time.time()
+        tiempo_ejecutado=fin-inicio
+        print(tiempo_ejecutado)
+
+    if eleccion==6:
+        inicio=time.time()
+        print("Gracias por usar la calculadora")
+        fin=time.time()
+        tiempo_ejecutado=fin-inicio
+        print(tiempo_ejecutado)
