@@ -1,0 +1,14 @@
+def fibonacci (num): 
+    fibo.insert(0,1) 
+    fibo.insert(1,1)
+
+    for i in range(2,num):
+        next=fibo[i-2]+fibo[i-1]
+        fibo.append(next)
+
+num = int(input('Ingresa el numero que deseas \n')) 
+fibo = [] 
+print(f'El programa se ejecutara hasta el numero: {num}')
+
+fibonacci(100)
+print(f'El resultado fibonacci es {fibo[num]}')
