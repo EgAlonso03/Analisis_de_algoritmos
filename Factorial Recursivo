@@ -1,0 +1,10 @@
+x = int(input('Introduce el número al que deseas calcular el factorial: '))
+def factorial(x):
+    if(x<=1):
+        return 1
+    else:
+        return x*factorial(x-1)
+
+resultado_de_factorial = factorial(x)
+print("El factorial de",x)
+print("es: ",resultado_de_factorial)
