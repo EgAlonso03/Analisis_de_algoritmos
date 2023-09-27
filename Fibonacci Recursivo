@@ -1,0 +1,9 @@
+x = int(input("Ingrese la posción que desea conocer de la serie fibonacci "))
+def fibo(x):
+    if (x<=1):
+        return x
+    else:
+        return fibo(x-2)+fibo(x-1)
+    
+Resultado = fibo(x)
+print('El número en la posición que solicitó es: ',Resultado)
