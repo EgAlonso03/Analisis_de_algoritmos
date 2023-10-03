@@ -1,0 +1,11 @@
+def burbuja(nums):  #definimmos una función que toma una lista 
+    for i in range(1,len(nums)):  #utilizamos un ciclo for que va desde 1 hasta la cantidad de elemntos de la lista 
+        for j in range(0,len(nums)-i): # Dentro del bucle externo, comenzamos otro bucle for que va desde 0 hasta la longitud de la lista nums menos i, esto asegura que solo se comparen los elementos que aún no están ordenados.
+            if(nums[j+1] < nums[j]):  #Dentro del bucle interno comparamos el elemento en la posición j+1 (el siguiente elemento) con el elemento en la posición j. Si el elemento en la posición j+1 es menor que el elemento en la posición j, significa que están en el orden incorrecto y necesitan ser intercambiados.
+                aux=nums[j] #Si se cumple la condición anterior, realizamos un intercambio utilizando una variable auxiliar llamada aux. 
+                nums[j]=nums[j+1]#nums[j] y nums[j+1] intercambian sus valores.
+                nums[j+1]=aux
+    print(nums) #se imprime la lista ya ordenada 
+
+nums=[3,5,8,4,6] #definimos la lista a ordenar
+burbuja(nums)
